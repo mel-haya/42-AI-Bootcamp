@@ -5,7 +5,7 @@ def text_analyzer(*args):
 punctuation and spaces in a given text'''
     if len(args) > 1:
         print("ERROR")
-        return()
+        return
     if len(args) == 0:
         text = input("please insert a text :\n")
         text_analyzer(text)
