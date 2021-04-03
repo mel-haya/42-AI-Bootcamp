@@ -1,0 +1,8 @@
+1 - pip list|cut -d' ' -f1
+2 - pip list
+3 - pip show numpy
+4 - pip search tesseract
+(pip search is temporarily deprecated a simple fix is to :
+install the package pypisearch : "pip install pypisearch tabulate"
+then search "python -m pypisearch "tesseract")
+5 - pip freeze > requirements.txt
