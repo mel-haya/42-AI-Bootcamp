@@ -7,12 +7,12 @@ cookbook = {
         "prep_time" : 10
     },
     "cake":{
-        "ingredients" : ("flour", "sugar", "eggs"),
+        "ingredients" : ["flour", "sugar", "eggs"],
         "meal" : "dessert",
         "prep_time" : 60
     },
     "salad":{
-        "ingredients" : ("avocado", "arugula", "tomatoes" ,"spinach"),
+        "ingredients" : ["avocado", "arugula", "tomatoes" ,"spinach"],
         "meal" : "lunch",
         "prep_time" : 15
     }
@@ -82,17 +82,16 @@ def menu_print_all():
 def menu_add():
     ingredient = ""
     ingredients = list()
-    name = input("Enter the name of the recipe\n>>")
+    name = input("Enter the name of the recipe\n>> ")
     if name in cookbook:
         print("this recipe name is already used")
         input("Press Enter to continue...")
         return
     print("Enter the ingredients of the recipe and write \"done\" when finished")
     while(ingredient != "done"):
-        ingredient = input(">>")
+        ingredient = input(">> ")
         ingredients.append(ingredient)
     ingredients.pop()
-    ingredients = tuple(ingredients)
     meal = input("Enter the type of the recipe\n>> ")
     time = int(input("Enter the preparation time of the recipe\n>> "))
     add_rec(name, ingredients, meal, time)
