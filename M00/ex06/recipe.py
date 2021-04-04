@@ -84,6 +84,7 @@ def menu_add():
     if name in cookbook:
         print("this recipe name is already used")
         input("Press Enter to continue...")
+        return
     print("Enter the ingredients of the recipe and write \"done\" when finished")
     while(ingredient != "done"):
         ingredient = input(">>")
