@@ -1,4 +1,4 @@
-t = (19,42,21,5,99,8,11)
+t = (19,42,21)
 i = 0
 s = "The " + str(len(t)) + " numbers are:"
 while i < len(t):
