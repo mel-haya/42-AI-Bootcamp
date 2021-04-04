@@ -35,8 +35,10 @@ def menu():
         menu_print_one()
     elif choice == '4':
         menu_print_all()
-    elif choice == '5':
+    elif choice == '5' or choice == "quit":
         exit_menu()
+    else:
+        input("ERROR: invalid input press Enter to continue...")
     menu()
     
 
@@ -103,4 +105,5 @@ def add_rec(name, ingredients, meal, time):
     cookbook[name]["meal"] = meal
     cookbook[name]["prep_time"] = time
     print("The recipe", name ,"was succesfully added")
+
 menu()
