@@ -29,7 +29,3 @@ punctuation and spaces in a given text'''
         print("- ", lower," lower letters")
         print("- ", punctuation," punctuation marks")
         print("- ", spaces," spaces")
-
-
-            
-
